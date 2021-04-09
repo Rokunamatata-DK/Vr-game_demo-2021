@@ -12,12 +12,13 @@ public class BulletController : MonoBehaviour
 
 
 
+
     //Variables
 
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -25,9 +26,12 @@ public class BulletController : MonoBehaviour
     {
         //curve bullet based on curve graph
         timeElapsed += Time.deltaTime;
-        transform.position = new Vector3(transform.position.x + AC_YCurvePositive.Evaluate(timeElapsed), transform.position.y, transform.position.z + 0.1f);
+        //transform.localPosition = new Vector3(transform.position.x + AC_YCurvePositive.Evaluate(timeElapsed), transform.position.y, transform.position.z + 0.1f);
+        
+        
+        transform.position = transform.position + transform.forward * 0.5f;
 
-       
+
 
     }
 }

@@ -8,11 +8,15 @@ public class PlayerController : MonoBehaviour
 
     public GameObject O_Bullet;
 
+    GameObject O_MainCamera;
+    CameraController S_CameraScript;
 
 
     void Start()
     {
-        
+        //get camera rotation for bullet base rotation & position
+        O_MainCamera = GameObject.Find("Main Camera");
+        S_CameraScript = O_MainCamera.GetComponent<CameraController>();
     }
 
     // Update is called once per frame
@@ -22,9 +26,16 @@ public class PlayerController : MonoBehaviour
         {
 
             //create game object whenever key is pressed
-            GameObject Bullet = Instantiate(O_Bullet);
-            Bullet.transform.position = transform.position + transform.forward;
-            Bullet.transform.rotation = transform.rotation;
+
+            
+
+            Vector3 V_BulletLocation = S_CameraScript.T_CameraTransform.position + S_CameraScript.T_CameraTransform.forward;
+            Quaternion Q_BulletRotation = S_CameraScript.T_CameraTransform.rotation;
+            GameObject Bullet = Instantiate(O_Bullet, V_BulletLocation, Q_BulletRotation);
+            //Bullet.transform.position = this.transform.position + transform.forward;
+            //Bullet.transform.rotation = this.transform.rotation;
+
+            Destroy(Bullet, 2.0f);
         }
     }
 }

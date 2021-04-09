@@ -10,6 +10,7 @@ public class CameraController : MonoBehaviour
 	float f_RotationY;
     public Transform T_PlayerTransform;
     public bool b_HideCursor = true;
+    public Transform T_CameraTransform;
 
 	//overall multi-factor of rotation speed
 	public float f_MouseSensitivity = 100.0f;
@@ -27,7 +28,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
+        
     	//Takes Mouse input, multiply it with sensitivity.
         float f_MouseInputY= Input.GetAxis("Mouse Y") * Time.deltaTime * f_MouseSensitivity * 10; 
         float f_MouseInputX= Input.GetAxis("Mouse X") * Time.deltaTime * f_MouseSensitivity * 10;
@@ -42,6 +43,10 @@ public class CameraController : MonoBehaviour
 
         //Rotate player left and right
         T_PlayerTransform.Rotate(Vector3.up * f_MouseInputX);
-        */
+
+
+        //Store Camera Transform for other scripts
+        T_CameraTransform = this.transform;
+        
     }
 }
