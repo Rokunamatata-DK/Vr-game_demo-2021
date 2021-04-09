@@ -114,44 +114,44 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0.00059890747
       value: -0.000076293945
-      inSlope: -0.044970162
-      outSlope: -0.044970162
+      inSlope: -0.19287825
+      outSlope: -0.19287825
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.0571755
-      value: -0.0026205524
-      inSlope: -0.07579288
-      outSlope: -0.07579288
+      time: 0.101128444
+      value: -0.019466255
+      inSlope: -0.16479482
+      outSlope: -0.16479482
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.10363916
+      outWeight: 0.07493081
     - serializedVersion: 3
-      time: 0.49994648
-      value: -0.029047221
-      inSlope: 0.007271843
-      outSlope: 0.007271843
+      time: 0.500667
+      value: -0.039950117
+      inSlope: -0.0031597635
+      outSlope: -0.0031597635
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.33333334
+      outWeight: 0.09091945
     - serializedVersion: 3
-      time: 0.9499156
-      value: -0.000112636946
-      inSlope: 0.013069918
-      outSlope: 0.013069918
+      time: 0.89950055
+      value: -0.019704923
+      inSlope: 0.18004055
+      outSlope: 0.18004055
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0.08086738
+      outWeight: 0.27631792
     - serializedVersion: 3
       time: 0.99707174
       value: -0.00028395653
-      inSlope: -0.003633027
-      outSlope: -0.003633027
+      inSlope: 0.19904406
+      outSlope: 0.19904406
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -159,4 +159,3 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  player: {fileID: 362409165265317733, guid: 18c9a366e2144c44396e7cac9acad85e, type: 3}
